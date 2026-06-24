@@ -1,0 +1,81 @@
+
+body {
+    background-color: rgb(34, 34, 38);
+
+}
+
+.header a {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+#usname {
+    color: red;
+    display:inline-block;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+#header-buttons {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+    
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+
+
+.header {
+    color: rgb(255, 255, 255);
+    height: 40px;
+}
+
+
+
+
+main {
+    height: 900px;
+}
+
+
+
+
+
+#middle{
+    font-size: 50px;
+    margin-top: 150px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.login-registration{
+    font-size: 25px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+
+}
