@@ -1,81 +1,126 @@
-
-body {
-    background-color: rgb(34, 34, 38);
-
+@font-face {
+    font-family: 'Arian';
+    src: url('/fonts/Arian-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-.header a {
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    
+
+
+
+
+
+
+body {
+    background-color: #121212;
+    font-family: 'Arian';
+    color: white;
+    /* overflow:hidden; */
 }
 
 
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
 }
 
 
 
 
-#usname {
-    color: red;
-    display:inline-block;
-    position: fixed;
-    left: 10px;
-    top: 10px;
+#main-text{
+    display: grid;
+    align-content: center;
+
+    width: max-content;
+    height: 450px;
+
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    background-color: rgb(92, 155, 182);
+    border-radius: 10px;
+    background-image: url("/content/icons/moon.svg");
+    background-size: 100px 150px;
 }
 
 
 
-#header-buttons {
-    position: fixed;
-    right: 10px;
-    top: 10px;
+
+.name{
+    color: white;
+    width: max-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    
 }
+
+
+
+
+
+
+#log-reg-area{
+    display: flex;
+    width: max-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 30px;
+
+    gap: 10px;
+}
+
+
+
+
+
+.log-reg-buttons{
+    color: black;
+    font-size: 16px;
+
+    height: 35px;
+    width: fit-content; ;
+
+    padding: 0 10px;
+
+    background-color: white;
+    border-radius: 100px;
     
 
-header {
-    background-color: black;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-}
-
-
-
-.header {
-    color: rgb(255, 255, 255);
-    height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 
 
 
-main {
-    height: 900px;
+.log-reg-buttons:hover{
+    color: rgb(152, 152, 152)
+
+}
+
+.log-reg-buttons:active{
+    opacity: 0.5;
+    color: rgb(152, 152, 152)
+
 }
 
 
 
+#log{
 
+    width: 35%;
+    height: 35%;
 
-#middle{
-    font-size: 50px;
-    margin-top: 150px;
-    width: max-content;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-.login-registration{
-    font-size: 25px;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px
-
 }

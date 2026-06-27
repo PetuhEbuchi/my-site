@@ -2,13 +2,20 @@
 <html lang="ru">
 <head>
 
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="petuh_ebuchi">
     <meta name="keywords" content="music,">
     <title>Mainpage</title>
-    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="/css/mainpage.css">
+
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="/content/icons/moon.svg">
     
+
+
 </head>
 
 
@@ -20,99 +27,41 @@
 
 <body>
 
-    <header>
-
-        <div class="header">
-
-            <span id="usname">
-                Название
-            </span>
-            <span id="header-buttons">
-
-
-
-                <span>
-                    <a href="mailto:petuhebuchi@gmail.com">Связаться с нами</a>
-                </span>
-
-
-
-                <span>
-                    light dark theme 
-                </span>
-
-
-
-                <span>
-                    сменить язык
-                </span>
-
-                
-                
-                <span>
-                    <a href="/log.html" target="_self">войти</a>
-                </span>
-
-
-
-                <span>
-                    <a href="/register.html" target="_self">создать аккаунт</a>
-
-
-                </span>
-            </span>
-
-        </div>
-
-    </header>
-
-
-
-
-
-
-
-
-
 
 
     <main>
 
-        <div>
-            <div id = "middle">
-                <h1>название</h1>
-            </div>
-            
-            <div style="width: max-content; 
-            margin-top: 50px; 
-            margin-left: 
-            auto; 
-            margin-right: auto;
-            font-size: 30px;
-            
-            ">
+
+        <div id = "log-reg-area">
+
+            <a class="log-reg-buttons" href="#pisun" target="_self">войти</a>
 
 
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore</h3>
-            </div>
-        
+
+            <a class="log-reg-buttons" href="/register.html" target="_self">регистрация</a>
+
+
+        </div>
 
 
 
 
-            <div class="login-registration">
 
 
-                <div class="login-registration">
-                    <a href="/log.html" target="_self">войти</a>
-                </div>
-                
 
-                <div class="login-registration">
-                    <a href="/register.html" target="_self">создать аккаунт</a>
-                </div>
 
-            </div>
+
+        <div id="main-text">
+
+            <p class="name" style="font-size: 110px;">название</p>
+
+
+            <p class="name" style="font-size: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore</p>
+
+
+        </div>
+
+
 
 
         </div>
@@ -126,7 +75,7 @@
 
     <footer>
 
-        <div class="footer">
+        <div class="footer" style=" margin-top: 390px;">
             <div>
                 <span>
                     О проекте
@@ -147,9 +96,11 @@
 
 
 
+<div id="log">
 
+    <iframe id="pisun" src="log.html" width="100%"></iframe>
 
-
+</div>
 
 
 
