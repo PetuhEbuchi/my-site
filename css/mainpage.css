@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: 'Arian';
     src: url('/fonts/Arian-Bold.woff2') format('woff2');
     font-weight: bold;
@@ -9,26 +9,36 @@
 
 
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 
 
-body {
-    background-color: #121212;
+
+
+body{
+    background-color: rgb(18, 18, 18);
     font-family: 'Arian';
     color: white;
-    /* overflow:hidden; */
 }
 
 
 
-a {
+
+
+a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 
 
-#main-text {
+
+/* .main-text-area{
     position: relative;
+
     display: block;
     width: 1250px;
     height: 450px;
@@ -37,19 +47,21 @@ a {
     overflow: hidden;
 }
 
-#main-text::before {
+
+
+.main-text-area::before{
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
 
     background-color: rgb(72, 112, 255);
-    background-image: url("/content/imgs/Без\ имени-1.png");
+    background-image: url("/content/imgs/mainbg.png");
     background-size: 100%;
     opacity: 0.75;
 }
 
-#main-text > div {
+.main-text-area > div{
     position: relative;
     z-index: 1;
 }
@@ -61,7 +73,7 @@ a {
 
 
 
-.name{
+.main-text{
     color: white;
     width: max-content;
 
@@ -79,7 +91,11 @@ a {
 
 
 
-#log-reg-area{
+
+
+
+
+.log-reg-area{
     display: flex;
 
     width: max-content;
@@ -110,13 +126,18 @@ a {
     align-items: center;
     
 
+    transition: color 300ms, opacity 200ms;
+    
+
 }
 
 
 
 
-#log-reg-area a:hover{
+.log-reg-buttons:hover{
+    
     color: rgb(152, 152, 152);
+    
 
 }
 
@@ -126,21 +147,90 @@ a {
     opacity: 0.5;
     color: rgb(152, 152, 152)
 
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* new wer */
+
+
+
+
+.main-text-box{
+    position: relative;;
+    width: 1250px;
+    height: 450px;
+    margin: 20px auto 0px auto;
+
+    
+
+}
+
+.main-text-box::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-color: rgb(72, 112, 255);
+    background-image: url("/content/imgs/mainbg.png");
+    opacity: 0.9;
+    border-radius: 15px;
+}
+
+
+.main-text-area{
+    float: right;
+    margin-top: 50px;
+}
+
+.main-text{
+    margin-top: 50px;
+    text-align: center;
 }
 
 
 
-#log{
 
-    width: 35%;
-    height: 35%;
+.log-reg-area{
+    display: inline-flex;
+    float: right;
+    gap: 8px;
+    margin:15px 15px 20px 0px ;
+    
+}
 
-    margin-left: auto;
-    margin-right: auto;
+.log-reg-buttons{
+
+    padding: 9px;
+    border-radius: 20px;
+
+    color: black;
+    background-color: rgb(255, 255, 255);
+    transition: color 200ms, opacity 50ms;
+
 }
 
 
+.log-reg-buttons:hover{
+    color: rgba(0, 0, 0, 0.558);
 
+}
+
+
+.log-reg-buttons:active{
+    opacity: 0.5;
+
+}
 
 
 
@@ -155,4 +245,73 @@ a {
     margin-right: auto;
     margin-top: 35px;
     margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+/* .log{
+
+    width: 300px;
+    height: 100vh;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+}
+ */
+
+
+
+ #logFrame{
+    margin: -50% auto 0 auto;
+    inset: 0px;
+    position: fixed;
+    visibility: hidden;
+    width:442px;
+    height: 336px;
+    border: none;
+    z-index: 1000;
+
+    transition: all 500ms;
+
+
+}
+
+ #regFrame{
+    opacity: 0;
+    margin: -50% auto 0 auto;
+    inset: 0px;
+    position: fixed;
+    visibility: hidden;
+    width:442px;
+    height: 336px;
+    border: none;
+    z-index: 1000;
+
+    transition: all 500ms;
+
+}
+
+.frames{
+    opacity: 0;
+    inset: 0px;
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    display: flex;
+
+    background-color: rgba(255, 255, 255, 0.382);
+    visibility: hidden;
+
+    transition: all 500ms;
+
+
+    
+
+
 }

@@ -5,7 +5,7 @@
 
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <meta name="author" content="petuh_ebuchi">
     <meta name="keywords" content="music,">
     <title>Mainpage</title>
@@ -28,41 +28,35 @@
 <body>
 
 
-
     <main>
 
 
-
-        <div id="main-text">
-            
-            <div>
-
-
-                <div id = "log-reg-area">
-
-                    <a class="log-reg-buttons" href="#pisun" target="_self">войти</a>
+        <div class="main-text-box">
 
 
 
-                    <a class="log-reg-buttons" href="/register.html" target="_self">регистрация</a>
 
+
+                <div class="log-reg-area">
+
+                    <a id="logButton" class="log-reg-buttons"  onclick="logreg('log')" target="_self">войти</a>
+
+                    <a id="regButton" class="log-reg-buttons"  onclick="logreg('reg')" target="_self">регистрация</a>
 
                 </div>
 
 
 
 
-                <p class="name" style="font-size: 110px;">название</p>
+
+                <div class="main-text-area">
+
+                    <p class="main-text" style="font-size: 110px;">название</p>
 
 
-                <p class="name" style="font-size: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore</p>
-
-
-            </div>
-        </div>
-
-
-
+                    <p class="main-text" style="font-size: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore</p>
+                
+                </div>
 
         </div>
 
@@ -94,17 +88,18 @@
     </footer>
 
 
+    <div id="divframe1" onclick="closeforms()" class="frames">
 
+        <iframe id="logFrame" src="log.html" ></iframe>
+    </div>
+    
+    <div id="divframe2" onclick="closeforms()" class="frames">
 
-<div id="log">
+        <iframe id="regFrame" src="reg.html" ></iframe>
+    
+    </div>
+    
 
-    <iframe id="pisun" src="log.html" width="100%"></iframe>
-
-</div>
-
-
-
-
-
+    <script src="/js/mainpage.js"></script>
 </body>
 </html>
