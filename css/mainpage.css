@@ -52,6 +52,9 @@ a{
 
 .main-text-box{
     position: relative;;
+    display: flex;
+    flex-direction: column;
+
     width: 1250px;
     height: 450px;
     margin: 35px auto 0px auto;
@@ -74,12 +77,16 @@ a{
 
 
 .main-text-area{
-    float: right;
+    display: flex;
+    flex-direction: column;
     margin-top: 50px;
+    align-items: center;
 }
 
 .main-text{
-    margin-top: 50px;
+    position: relative;
+    display: block;
+    margin-top: 5px;
     text-align: center;
 }
 
@@ -88,9 +95,9 @@ a{
 
 .log-reg-area{
     display: inline-flex;
-    float: right;
+
     gap: 8px;
-    margin:15px 15px 20px 0px ;
+    margin:15px 15px 20px auto ;
     
 }
 
