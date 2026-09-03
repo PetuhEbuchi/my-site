@@ -11,6 +11,8 @@
 * {
     margin: 0px;
     padding: 0px;
+
+    transition: 300ms;
 }
 
 
@@ -21,9 +23,17 @@ body{
 
 
 .buttonsArea a{
+    margin-top: 3px;
     text-decoration: none;
     cursor: pointer;
-    color: rgb(157, 157, 157);
+    color: rgb(190, 190, 190);
+}
+
+.buttonsArea a:hover{
+    margin: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -38,7 +48,7 @@ body{
 .buttonsArea{
     display: flex;
     justify-content: right;
-    margin: 0px 100px 0px auto;
+    margin: 0px 100px 10px auto;
 
     gap: 15px;
 }
@@ -84,4 +94,40 @@ body{
     font-size: 24px;
     width: max-content;
     margin: 0px auto 10px auto;
+}
+
+
+.burgermenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 20px;
+    height: 20px; */
+    /* background-color: brown; */
+}
+.burgermenu svg{
+    width: 25px;
+    height: 25px;
+    
+    fill: rgb(190, 190, 190);
+    
+}
+/* transform: rotate(90deg); */
+
+.burgermenu svg:hover{
+    fill: rgb(255, 255, 255);
+
+    margin: -3px 0px 1px 0px;
+    width: 27px;
+    height: 27px;
+    
+    
+}
+/* .burgermenu:hover{
+        margin-top: -5;
+    } */
+
+.buttonsArea a:hover{
+    margin-top: -1px;
+    font-size: 17px;
 }
