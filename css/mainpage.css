@@ -79,15 +79,15 @@ a{
 .main-text-area{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
     align-items: center;
 }
 
 .main-text{
     position: relative;
     display: block;
-    margin-top: 5px;
     text-align: center;
+    margin-top: 45px;
+
 }
 
 
